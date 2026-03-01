@@ -1,0 +1,83 @@
+.linear {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+}
+
+.sm .track {
+  height: 4px;
+}
+
+.md .track {
+  height: 8px;
+}
+
+.lg .track {
+  height: 12px;
+}
+
+.track {
+  flex: 1;
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--color-amber);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-slow);
+}
+
+.label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-ink-light);
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Circular */
+.circular {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circularSvg {
+  transform: rotate(-90deg);
+}
+
+.circularTrack {
+  stroke: var(--color-border);
+}
+
+.circularFill {
+  stroke: var(--color-amber);
+  transition: stroke-dashoffset var(--transition-slow);
+}
+
+.sm .circularSvg {
+  width: 40px;
+  height: 40px;
+}
+
+.md .circularSvg {
+  width: 60px;
+  height: 60px;
+}
+
+.lg .circularSvg {
+  width: 80px;
+  height: 80px;
+}
+
+.circularLabel {
+  position: absolute;
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-ink);
+}

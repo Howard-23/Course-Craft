@@ -1,0 +1,142 @@
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-8) var(--container-padding) var(--space-16);
+}
+
+.header {
+  margin-bottom: var(--space-12);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--font-semibold);
+  color: var(--color-ink);
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-ink-light);
+}
+
+.section {
+  margin-bottom: var(--space-12);
+  padding-bottom: var(--space-12);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  color: var(--color-ink);
+  margin-bottom: var(--space-6);
+}
+
+.colorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--space-4);
+}
+
+.colorCard {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.colorSwatch {
+  height: 80px;
+}
+
+.colorInfo {
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.colorName {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-ink);
+}
+
+.colorValue {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-ink-light);
+}
+
+.typography {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.typeRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.typeLabel {
+  width: 80px;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-ink-light);
+}
+
+.typeSample {
+  font-size: var(--text-lg);
+}
+
+.typeSizes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.typeSizeRow {
+  color: var(--color-ink);
+}
+
+.componentRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.componentColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.formGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 400px;
+}
+
+.skeletonGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}

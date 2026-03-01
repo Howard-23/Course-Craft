@@ -1,0 +1,49 @@
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  display: flex;
+  color: var(--color-amber);
+}
+
+.star svg {
+  fill: currentColor;
+}
+
+.star.empty {
+  color: var(--color-border);
+}
+
+.star.empty svg {
+  fill: none;
+  stroke: currentColor;
+}
+
+/* Sizes */
+.sm .star svg {
+  width: 14px;
+  height: 14px;
+}
+
+.md .star svg {
+  width: 18px;
+  height: 18px;
+}
+
+.lg .star svg {
+  width: 24px;
+  height: 24px;
+}
+
+.value {
+  font-weight: var(--font-semibold);
+  color: var(--color-ink);
+}

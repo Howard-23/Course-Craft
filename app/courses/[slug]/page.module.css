@@ -1,0 +1,249 @@
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-8) var(--container-padding) var(--space-16);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-ink-light);
+  margin-bottom: var(--space-8);
+}
+
+.breadcrumb a {
+  color: var(--color-ink-light);
+}
+
+.breadcrumb a:hover {
+  color: var(--color-amber-dark);
+}
+
+.breadcrumb span:last-child {
+  color: var(--color-ink);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr 400px;
+  }
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.badges {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--font-semibold);
+  color: var(--color-ink);
+  line-height: var(--leading-tight);
+}
+
+.description {
+  font-size: var(--text-lg);
+  color: var(--color-ink-light);
+  line-height: var(--leading-relaxed);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.instructor {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-ink-light);
+}
+
+.instructorAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.students {
+  color: var(--color-ink-light);
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  padding-top: var(--space-4);
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-ink-light);
+}
+
+.heroImage {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr 380px;
+  }
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+}
+
+.section h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  color: var(--color-ink);
+  margin-bottom: var(--space-4);
+}
+
+.learnList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+@media (min-width: 640px) {
+  .learnList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.learnList li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+}
+
+.learnList svg {
+  color: var(--color-success);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.sidebar {
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-8));
+  height: fit-content;
+}
+
+.purchaseCard {
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: var(--space-4);
+}
+
+.currency {
+  font-size: var(--text-xl);
+  font-weight: var(--font-medium);
+  color: var(--color-ink-light);
+}
+
+.amount {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  color: var(--color-ink);
+}
+
+.ctaButton {
+  width: 100%;
+  margin-bottom: var(--space-3);
+}
+
+.ctaSubtext {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--color-ink-light);
+}
+
+.includes {
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.includes h4 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--color-ink);
+  margin-bottom: var(--space-4);
+}
+
+.includes ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.includes li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-ink-light);
+}
+
+.includes svg {
+  color: var(--color-ink-light);
+}

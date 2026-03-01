@@ -1,0 +1,90 @@
+.curriculum {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  color: var(--color-ink);
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-ink-light);
+}
+
+.stats span {
+  display: flex;
+  align-items: center;
+}
+
+.lessonList {
+  display: flex;
+  flex-direction: column;
+}
+
+.lessonItem {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lessonItem:last-child {
+  border-bottom: none;
+}
+
+.lessonNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--color-paper-warm);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-ink-light);
+  flex-shrink: 0;
+}
+
+.lessonContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.lessonTitle {
+  font-size: var(--text-base);
+  color: var(--color-ink);
+}
+
+.lessonMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.lessonType {
+  display: flex;
+  align-items: center;
+  color: var(--color-ink-light);
+}
+
+.lessonDuration {
+  font-size: var(--text-sm);
+  color: var(--color-ink-light);
+}
